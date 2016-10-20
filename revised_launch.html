@@ -1,16 +1,18 @@
-<!DOCTYPE html>  
-  <head>
-    <!-- <meta content="width=device-width" name="viewport"/> -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AYR</title>
-      <style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  <head>    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      AYR
+    </title>
+    <style type="text/css">
         /*////////// Reset Styles //////////*/
         body {
-          height: 100%!important; 
           margin: 0; 
           padding: 0; 
           width: 100% !important;
+          min-width: 100%;
+          -webkit-text-size-adjust: 100%; 
+          -ms-text-size-adjust: 100%;
         }
         table {
           border-spacing: 0;
@@ -31,147 +33,124 @@
           text-align: center;
           color: #333333;
         }
-        table {
-          align: center;
-          max-width: 100%;
+        img {
+          outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;
         }
-        .bodyHeader {
-          width: 50%;
-          align: left;
-          text-align: right; 
-          padding: 0% 8% 0 7%; 
-          border-right: 2px solid #e3e3e3;
-        }
-        .bodyCopy {
-          width: 50%;
-          align: right;
-          text-align: right;
-          padding: 0px 10px;
-          margin-right: 5%;
-        }
-        .CTAButton {
-          padding-right: 10%; 
-        }
+        
         /*////////// Media Query for Mobile //////////*/
         @media only screen and (max-width: 480px){
 
         /*////// Reset Styles for Mobile //////*/
-        td[id="headerContainer"], td[id="introContainer"], td[id="footerContainer"]{padding-right:10px !important; padding-left:10px !important;}
-        
+        td[id="headerContainer"], td[id="introContainer"], td[id="footerContainer"]{padding-right:10px !important; padding-left:10px !important; max-width:480px !important; width:100% !important;}
+
         /*////// Mobile to render at full width //////*/
-        body{width:100% !important; min-width:100% !important;}
+        body{max-width:100% !important; min-width:100% !important;}
         
         /*////// General Mobile Styles //////*/
-        h3{font-size: 28px !important;}
-        .bodyHeader {width: 100%; align: center; text-align: center; padding:0; border:none; display: block !important;
+        h3{font-size: 26px !important; padding: 0 !important;margin: 0 !important;}
+        #emailContainer {max-width: 100%;}
+        td.bodyHeader {width: 100% !important; align: center; text-align: center !important; padding:0 !important; border:none !important; display: block !important;
         }
-        .bodyCopy {width: 100%; align: center; text-align: center; padding:10px 0; display: block !important;
+        .bodyCopy {width: 100% !important; align: center; text-align: center !important; padding:10px 0 !important; display: block !important;
         }
-        .emptyCell {width: 0;}
+        .emptyCell {width: 27% !important;}
         .CTAButton {padding: 0%;}
           
         }
       </style>
   </head>
-  <body> 
-    <center style="width: 100% !important; min-width: 580px;">  
-      <table class="body" style="border-spacing: 0; vertical-align: top; height: 100%; width: 100%; padding: 0;">
-        <tr>
-          <td align="center" valign="top" id="bodyCell">
-            <!-- /////// Begin Email ///////-->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer">
-              <!-- /////// Header Logo ///////-->
-              <tr>
-                <td align="center" valign="top" id="headerContainer">              
-                  <table align="center" class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; padding: 0;">                
-                    <tr align="left" style="vertical-align: top; text-align: left; padding: 0;">                  
-                      <td align="center" class="" style="padding-top: 15px !important; padding-bottom: 15px !important; border-collapse: collapse !important; width: 100%; vertical-align: top; padding: 0;" valign="top">                    
-                          <a href="https://www.ayr.com" style="text-decoration: none;">
-                            <img alt="AYR" height="40" src="https://cdn.shopify.com/s/files/1/1212/1112/files/AYR_logo.png?9423380064877950056" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
+  <body>    
+    <center>      
+      <table class="body" style="border-spacing: 0; vertical-align: top; height: 100%; width: 100%; padding: 0;">        
+        <tr>          
+          <td align="center" id="container" valign="top">            <!-- /////// Begin Email ///////-->
+            <table border="0" cellpadding="0" cellspacing="0" id="emailContainer" width="100%">              <!-- /////// Header Logo ///////-->
+              <tr>                
+                <td align="center" id="headerContainer" valign="top">                  
+                  <table align="center" class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; padding: 0;">                    
+                    <tr align="left" style="vertical-align: top; text-align: left; padding: 0;">                      
+                      <td align="center" class="" style="padding-top: 15px !important; padding-bottom: 15px !important; border-collapse: collapse !important; width: 100%; vertical-align: top; padding: 0;" valign="top">                        <a href="https://www.ayr.com" style="text-decoration: none;">
+                          <img alt="AYR" height="40" src="https://cdn.shopify.com/s/files/1/1212/1112/files/AYR_logo.png?9423380064877950056" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>
-            <!-- ////// TOP BLACK BAR //////-->
-              <tr>
-                <td>
-                  <table width="100%">
-                      <tr height="20px">
-                        <td align="center" width="100%" style= "text-align: center; margin: 0 auto; padding: 8px 0; background-color: #333333">
-                          <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-decoration: none; color: #ffffff;"> <span style="font-family:'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; letter-spacing: 2px; font-size:11px; font-weight: lighter;">New new new. 
-                          </a>
-                        </td>
-                      </tr>
-                  </table>
-                </td>
-              </tr>
-            <!--////// HERO IMAGE //////-->
-              <tr>   
-                <td align="left" style="border-collapse: collapse !important; width: 100%; vertical-align: top; text-align: left; padding: 0;" valign="top">
-                  <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-decoration: none;">
-                    <img alt="AYR | 648 Broadway | New York | NY | 10012." class="u-responsive u-responsive--full" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/1df3817a-bb2c-4822-8551-efc30b3b94d8.jpeg" style="display: block; height: auto; max-width: 100%; width: 100%; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0 auto;"/>
-                  </a>
-                </td>
-              </tr>
-            <!--////// SPACE BREAK //////-->
-              <table >              
-                <tr align="center" style="width: 100%; height: 30px;">                
-                  <td>
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            <!--/////// Intro Block ///////-->
-              <tr width="100%">
-                <td align="center" valign="center" id="introContainer">
-                  <table class="body">
-                    <tr>
-                      <td class="bodyHeader">
-                        <h3 style="font-family:'Lasiver-Medium','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; letter-spacing: 1.3px; line-height: 1.3; text-transform: none; font-size: 50px; word-break: normal; margin: 0;">You know what to do.
-                        </h3>
-                      </td>
-                      <td class="bodyCopy" style="border-collapse: collapse !important;vertical-align: center;" valign="center">                       
-                        <p style="font-family: 'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; line-height: 1.5 !important; font-weight: lighter; text-transform: none; font-size: 16px; word-break: normal; color: #333333; text-decoration: none;">
-                              New stuff. 15% off.<br/>Expires at midnight ET.<br/>Code: PARTYALLDAY
-                        </p>
-                          <table align="right" style="width: 100%; height: 100px;">   
-                            <tr>                          
-                              <td class="emptyCell">
-                                &nbsp;
-                              </td>
-                              <td class="CTAButton">                             
-                                <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-align: center; font-family: 'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; font-weight: lighter; color: white; text-decoration: none; display: inline-block; font-size: 16px; min-width: 140px; letter-spacing: 1.5px; width: auto; background: #333333; padding: 15px 0px; margin: 0 auto;">Shop Now</a>
-                              </td>
-                              <td class="emptyCell">
-                                &nbsp;
-                              </td>
-                            </tr>
-                          </table>
+<!-- ////// TOP BLACK BAR //////-->
+              <tr>                
+                <td>                  
+                  <table width="100%">                    
+                    <tr height="20px">                      
+                      <td align="center" style="text-align: center; margin: 0 auto; padding: 8px 0; background-color: #333333" width="100%">                        <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-decoration: none; color: #ffffff;"> <span style="font-family:'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; letter-spacing: 2px; font-size:11px; font-weight: lighter;">New new new. </span>
+</a>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>
-
-            <!-- SPACE BREAK -->             
-              <tr align="center" style="width: 100%; height: 20px;">                  
+<!--////// HERO IMAGE //////-->
+              <tr>                
+                <td align="center" style="border-spacing: 0; border-collapse: collapse !important; width: 100%; vertical-align: top; width: 100%; padding: 0;">                  <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-decoration: none;">
+                    <img alt="AYR | 648 Broadway | New York | NY | 10012." src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/1df3817a-bb2c-4822-8551-efc30b3b94d8.jpeg" style="display: block; height: auto; max-width: 100%; width: 100%; outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0 auto;"/>
+</a>
+                </td>
+              </tr>
+<!--////// SPACE BREAK //////-->
+              <tr align="center" style="width: 100%; height: 30px;">                
                 <td>
                   &nbsp;
                 </td>
               </tr>
-
-          <!--////// FOOTER //////-->           
-               <tr width="100%">
-                <td align="center" valign="center" id="footerContainer">
-                  <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: center; width: 580px; margin: 0 auto; padding: 0;">                    
+<!--/////// Intro Block ///////-->
+              <tr width="100%">                
+                <td align="center" id="introContainer" valign="center">               
+                  <table>                    
+                    <tr>                          
+                      <td class="bodyHeader" style="width: 65%; align: left; text-align: right; border-right: 2px solid #e3e3e3;">          
+                        <h3 style="font-family:'Lasiver-Medium','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; color: #333333; font-style: normal; font-weight: bold; letter-spacing: 1.3px; line-height: 1.3; text-transform: none; font-size: 50px; word-break: normal; margin: 0; padding: 0% 10% 0% 0%; ">
+                          You know what to do.
+                        </h3>
+                      </td>
+                      <td class="bodyCopy" style=" width: 50%; align: right; text-align: right; padding: 0px 10px; margin-right: 5%; border-collapse: collapse !important; vertical-align: center;">
+                      <p style="font-family:'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; line-height: 1.5 !important; font-weight: lighter; text-transform: none; font-size: 16px; word-break: normal; color: #333333; text-decoration: none;">
+                        New stuff. 15% off.<br/>Expires at midnight ET.<br/>Code: PARTYALLDAY
+                      </p>
+                        <table align="right" style="border-collapse: collapse !important; vertical-align: center; width: 100%; height: 100px;">                                
+                          <tr>                                  
+                            <td class="emptyCell" style="width: 65%;">
+                              &nbsp;
+                            </td>
+                            <td class="CTAButton">                                    <a href="https://www.ayr.com/collections/new-stuff?utm_medium=Email&amp;utm_source=Klaviyo&amp;utm_campaign=Customer_2016-09-13_AYR_Promo_Fall%202%20Launch&amp;cvosrc=Email.Klaviyo.Customer_2016-09-13_AYR_Promo_Fall%202%20Launch" style="text-align: center; font-family: 'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; font-weight: lighter; color: white; text-decoration: none; display: inline-block; font-size: 16px; min-width: 140px; letter-spacing: 1.5px; width: auto; background: #333333; padding: 15px 0px; margin: 0 auto;">Shop Now</a>
+                            </td>
+                            <td class="emptyCell">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <br style="clear:both;"/>
+                </td>
+              </tr>
+<!-- SPACE BREAK -->
+              <tr align="center" style="width: 100%; height: 20px;">                
+                <td>
+                  &nbsp;
+                </td>
+              </tr>
+<!--////// FOOTER //////-->
+              <tr width="100%">                
+                <td align="center" id="footerContainer" valign="center">                  
+                  <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: center; margin: 0 auto; padding: 0;">                    
                     <tr align="left" style="vertical-align: top; text-align: center; padding: 0;">                      
                       <td align="left" style="border-collapse: collapse !important; width: 100%; vertical-align: top; text-align: center; padding: 0;" valign="top">                        
-                        <div style="font-family:'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; font-weight: lighter; text-align: center; margin-bottom: 0; color: #333333; font-size: 11px; line-height: .5; letter-spacing: 1.2px;">
-                          <p style="line-height: 1;">
+                        <div style="font-family:'Lasiver-Light','Avenir-Medium','HelveticaNeue', Helvetica, Arial, sans-serif; font-weight: lighter; text-align: center; margin-bottom: 0; color: #333333; font-size: 11px; line-height: 1; letter-spacing: 1.2px;">                          
+                          <p>
                             No longer want to receive these emails? You can
                             <a href="{% unsubscribe_link %}" style="text-decoration: none; font-weight: lighter; color: #333333;">unsubscribe</a> here.
                           </p>
+                          <br/>
                           <p>
                             AYR Studio Shop | 648 Broadway | Suite 808
                           </p>
@@ -185,23 +164,27 @@
                       </td>
                     </tr>
                   </table>
-                <!--////// SOCIAL ICONS //////-->
+                  <br style="clear:both;"/>
+<!--////// SOCIAL ICONS //////-->
                   <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: center; width: 120px; margin: 0 auto; padding: 1.5px;">                    
                     <tr align="left" style="vertical-align: top; text-align: left; padding: 0;">                      
-                      <td style="text-align: center; padding: 2px; ">
-                        <a href="http://facebook.com/ayr">
+                      <td style="text-align: center; padding: 2px; ">                        <a href="http://facebook.com/ayr">
                           <img alt="facebook" height="26" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/facebook_iconfdcd1f.png" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
-                      <td style="text-align: center; padding: 2px;">                        <a href="https://www.tumblr.com/tagged/ayr">
+                      <td style="text-align: center; padding: 2px;">                        
+                        <a href="https://www.tumblr.com/tagged/ayr">
                           <img alt="tumblr" height="26" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/tumblr_icon13dca9.png" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
-                      <td style="text-align: center; padding: 2px;">                        <a href="https://www.instagram.com/ayr/">
+                      <td style="text-align: center; padding: 2px;">                        
+                        <a href="https://www.instagram.com/ayr/">
                           <img alt="instagram" height="26" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/instagram_icon973b6.png" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
-                      <td style="text-align: center; padding: 2px;">                        <a href="https://twitter.com/ayr">
+                      <td style="text-align: center; padding: 2px;">                        
+                        <a href="https://twitter.com/ayr">
                           <img alt="twitter" height="26" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/twitter_iconb2a4b1.png" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
-                      <td style="text-align: center; padding: 2px;">                        <a href="https://www.pinterest.com/ayrnewyork/">
+                      <td style="text-align: center; padding: 2px;">                        
+                        <a href="https://www.pinterest.com/ayrnewyork/">
                           <img alt="pinterest" height="26" src="https://d3k81ch9hvuctc.cloudfront.net/company/bBZNFC/images/pinterest_icone50193.png" style="outline: 0; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto;"/></a>
                       </td>
                     </tr>
@@ -209,6 +192,7 @@
                 </td>
               </tr>
 <!--/////// End Email ///////-->
+            </table>
           </td>
         </tr>
       </table>
